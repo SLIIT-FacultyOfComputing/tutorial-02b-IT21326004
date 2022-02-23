@@ -5,20 +5,24 @@ Convert the C program given below which calculates the Factorial of a number tha
 Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.*/
 
 #include <iostream>
-using namespace std;
+
 int main()
 {
     int no;
     long fac;
 
-    cout<<"Enter a Number : ";
-    cin>>no;
+    std::cout<<"Enter a Number : ";
+    std::cin>>no;
 
     fac = 1;
     for (int r=no; r >= 1; r--) {
         fac = fac * r;
     }
 
-    cout<<"Factorial of "<<no<<" is "<<fac<<endl;  
+    std::cout<<"Factorial of ";
+    std::cout<<no;
+    std::cout<<" is ";
+    std::cout<<fac;
+    std::cout<<std::endl;  
     return 0;
 }
